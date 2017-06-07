@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byeonghun-lee.github.io/"/>
-  <updated>2017-06-01T11:51:07.875Z</updated>
+  <updated>2017-06-07T12:52:46.849Z</updated>
   <id>https://byeonghun-lee.github.io/</id>
   
   <author>
@@ -16,17 +16,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo Themes(테마) 적용기</title>
+    <link href="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/"/>
+    <id>https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/</id>
+    <published>2017-06-07T12:09:58.000Z</published>
+    <updated>2017-06-07T12:52:46.849Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo로 블로그를 시작하며 어떤 테마를 사용할 지 고민했다.  프론트엔드 개발에 관한 포스팅보다 테마 바꾸기만 몇 번째인지…처음엔 일단 화려하고 애니메이션 많이 들어간 테마만 봤다. 그래서 선택한 것이<br><a id="more"></a></p>
+<p><img src="/images/themes1.JPG" alt="spfk 테마"><br><a href="https://luuman.github.io/" target="_blank" rel="external">https://luuman.github.io/</a><br>들어가서 보면 알겠지만 글을 클릭하고 다시 홈화면으로 돌아오면 애니메이션이 바뀐다. 화려함에 이 테마를 선택해서 적용했지만 문제점은… 한자… 주석이 다 한자이고 메뉴도 한자로 되어있으니 적응 불가… 다른 테마를 찾아보자. 이번엔 영어를 사용하는 사람. 그래서 다음으로 찾은 테마가  </p>
+<p><img src="/images/themes2.JPG" alt="Tranquilpeak 테마"><br><a href="http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/" target="_blank" rel="external">http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/</a><br>영어다. 심지어 친절하게도 문서정리가 잘 되어있다. 커스텀하는 것도 자세히 적어놨다. 하지만 학원에서 프로젝트가 들어가며 블로그를 만들기만 하고 가끔 들어가보는 정도였다. 학원이 끝나고 회사에 지원하면서 블로그도 정리하고 싶어서 hexo블로그 파일을 싹 지우고 새로 시작했다. 깔끔한 화면에 (영어로 문서가 작성되어있고) 기능이 많지는 않지만 내가 필요한 기능은 다 있는 고심 끝에 하나의 테마를 또 다시 선정했다.  </p>
+<p><img src="/images/themes3.JPG" alt="MaterialFlow 테마"><br><a href="http://keyin.me/" target="_blank" rel="external">http://keyin.me/</a><br>너무너무너무 맘에 들었다. 깔끔하고 원하는 기능 다 들어있고 세팅을 다 하고 기쁨 마음에 구글에도 등록해놨다.  </p>
+<p><img src="/images/hunBlog.JPG" alt="hun blog">  </p>
+<p>하지만 또 문제가 발생하였으니 파이어폭스에서 접속하면  </p>
+<p>![hun blog]/(images/hunBlog2.JPG)  </p>
+<p>반이 잘려나온다. 뭐지 설마 IE는…</p>
+<p><img src="/images/hunBlog3.JPG" alt="hun blog">  </p>
+<p><strong>아….</strong>  </p>
+<p>다시 테마를 바꾸자…  </p>
+<p> 깔끔한 화면에 (영어로 문서가 작성되어있고) 기능이 많지는 않지만 내가 필요한 기능은 다 있고 다른 브라우저에서 봤을 때도 똑같이 나오는 테마.  </p>
+<p><img src="/images/themes4.JPG" alt="Icarus 테마">  </p>
+<p>이젠 쭈욱 가자…  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hexo로 블로그를 시작하며 어떤 테마를 사용할 지 고민했다.  프론트엔드 개발에 관한 포스팅보다 테마 바꾸기만 몇 번째인지…처음엔 일단 화려하고 애니메이션 많이 들어간 테마만 봤다. 그래서 선택한 것이&lt;br&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="https://byeonghun-lee.github.io/categories/blog/"/>
+    
+    
+      <category term="Hexo" scheme="https://byeonghun-lee.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>smallBookStore</title>
     <link href="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/"/>
     <id>https://byeonghun-lee.github.io/2017/05/09/smallBookStore/</id>
     <published>2017-05-09T08:44:16.000Z</published>
-    <updated>2017-06-01T11:51:07.875Z</updated>
+    <updated>2017-06-07T11:36:19.510Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="새-프로젝트-시작"><a href="#새-프로젝트-시작" class="headerlink" title="새 프로젝트 시작"></a>새 프로젝트 시작</h4><p>블로그 정리가 안돼서 모두 지우고 새로 만들었다. 덕분에 글도 다 지워졌다.<br>학원에서 팀으로 만들었던 개인책장 프로젝트 말고 하나 더 Vuejs를 이용해서 프로젝트를 만들고 싶어서 많이 쓸 것 같은데 저번 프로젝트에선 사용하지 못 했던 기능을 넣어보고 싶었다.<br><a id="more"></a><br>여러 ui kit도 보고 어떤 식으로 만들어 볼까 고민만 하던 때에 이러다 시작도 못 하겠다 싶어서 일단은 시작했다. </p>
+<h4 id="디자인"><a href="#디자인" class="headerlink" title="디자인"></a>디자인</h4><p><img src="https://github.com/byeonghun-lee/byeonghun-lee.github.io/blob/master/2017/05/09/smallBookStore/sketch.jpg?raw=true" alt="스케치">  </p>
+<p><img src="https://github.com/byeonghun-lee/byeonghun-lee.github.io/blob/master/2017/05/09/smallBookStore/design.JPG?raw=true" alt="1차디자인">  </p>
+<p>이런 식으로 만들어봐야지 하고 또 파워포인트로 작업했다….</p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;새-프로젝트-시작&quot;&gt;&lt;a href=&quot;#새-프로젝트-시작&quot; class=&quot;headerlink&quot; title=&quot;새 프로젝트 시작&quot;&gt;&lt;/a&gt;새 프로젝트 시작&lt;/h4&gt;&lt;p&gt;블로그 정리가 안돼서 모두 지우고 새로 만들었다. 덕분에 글도 다 지워졌다.&lt;br&gt;학원에서 팀으로 만들었던 개인책장 프로젝트 말고 하나 더 Vuejs를 이용해서 프로젝트를 만들고 싶어서 많이 쓸 것 같은데 저번 프로젝트에선 사용하지 못 했던 기능을 넣어보고 싶었다.   &lt;/p&gt;
-&lt;p&gt;여러 ui kit도 보고 어떤 식으로 만들어 볼까 고민만 하던 때에 이러다 시작도 못 하겠다 싶어서 일단은 시작했다. &lt;/p&gt;
-&lt;h4 id=&quot;디자인&quot;&gt;&lt;a href=&quot;#디자인&quot; class=&quot;headerlink&quot; title=&quot;디자인&quot;&gt;&lt;/a&gt;디자인&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/byeonghun-lee/byeonghun-lee.github.io/blob/master/2017/05/09/smallBookStore/sketch.jpg?raw=true&quot; alt=&quot;스케치&quot;&gt;  &lt;/p&gt;
+      &lt;h4 id=&quot;새-프로젝트-시작&quot;&gt;&lt;a href=&quot;#새-프로젝트-시작&quot; class=&quot;headerlink&quot; title=&quot;새 프로젝트 시작&quot;&gt;&lt;/a&gt;새 프로젝트 시작&lt;/h4&gt;&lt;p&gt;블로그 정리가 안돼서 모두 지우고 새로 만들었다. 덕분에 글도 다 지워졌다.&lt;br&gt;학원에서 팀으로 만들었던 개인책장 프로젝트 말고 하나 더 Vuejs를 이용해서 프로젝트를 만들고 싶어서 많이 쓸 것 같은데 저번 프로젝트에선 사용하지 못 했던 기능을 넣어보고 싶었다.&lt;br&gt;
     
     </summary>
     
