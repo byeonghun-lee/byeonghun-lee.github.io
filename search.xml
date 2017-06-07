@@ -6,17 +6,19 @@
       <title><![CDATA[Hexo Themes(테마) 적용기]]></title>
       <url>/2017/06/07/apply-the-hexo-themes/</url>
       <content type="html"><![CDATA[<p>hexo로 블로그를 시작하며 어떤 테마를 사용할 지 고민했다.  프론트엔드 개발에 관한 포스팅보다 테마 바꾸기만 몇 번째인지…처음엔 일단 화려하고 애니메이션 많이 들어간 테마만 봤다. 그래서 선택한 것이<br><a id="more"></a></p>
-<p><img src="/images/themes1.JPG" alt="spfk 테마"><br><a href="https://luuman.github.io/" target="_blank" rel="external">https://luuman.github.io/</a><br>들어가서 보면 알겠지만 글을 클릭하고 다시 홈화면으로 돌아오면 애니메이션이 바뀐다. 화려함에 이 테마를 선택해서 적용했지만 문제점은… 한자… 주석이 다 한자이고 메뉴도 한자로 되어있으니 적응 불가… 다른 테마를 찾아보자. 이번엔 영어를 사용하는 사람. 그래서 다음으로 찾은 테마가  </p>
-<p><img src="/images/themes2.JPG" alt="Tranquilpeak 테마"><br><a href="http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/" target="_blank" rel="external">http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/</a><br>영어다. 심지어 친절하게도 문서정리가 잘 되어있다. 커스텀하는 것도 자세히 적어놨다. 하지만 학원에서 프로젝트가 들어가며 블로그를 만들기만 하고 가끔 들어가보는 정도였다. 학원이 끝나고 회사에 지원하면서 블로그도 정리하고 싶어서 hexo블로그 파일을 싹 지우고 새로 시작했다. 깔끔한 화면에 (영어로 문서가 작성되어있고) 기능이 많지는 않지만 내가 필요한 기능은 다 있는 고심 끝에 하나의 테마를 또 다시 선정했다.  </p>
+<p><img src="/images/themes1.JPG" alt="spfk 테마"><br><a href="https://luuman.github.io/" target="_blank" rel="external">https://luuman.github.io/</a>  </p>
+<p>들어가서 보면 알겠지만 글을 클릭하고 다시 홈화면으로 돌아오면 애니메이션이 바뀐다. 화려함에 이 테마를 선택해서 적용했지만 문제점은… 한자… 주석이 다 한자이고 메뉴도 한자로 되어있으니 적응 불가… 다른 테마를 찾아보자. 이번엔 영어를 사용하는 사람. 그래서 다음으로 찾은 테마가  </p>
+<p><img src="/images/themes2.JPG" alt="Tranquilpeak 테마"><br><a href="http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/" target="_blank" rel="external">http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/</a>  </p>
+<p>영어다. 심지어 친절하게도 문서정리가 잘 되어있다. 커스텀하는 것도 자세히 적어놨다. 하지만 학원에서 프로젝트가 들어가며 블로그를 만들기만 하고 가끔 들어가보는 정도였다. 학원이 끝나고 회사에 지원하면서 블로그도 정리하고 싶어서 hexo블로그 파일을 싹 지우고 새로 시작했다. 깔끔한 화면에 (영어로 문서가 작성되어있고) 기능이 많지는 않지만 내가 필요한 기능은 다 있는 고심 끝에 하나의 테마를 또 다시 선정했다.  </p>
 <p><img src="/images/themes3.JPG" alt="MaterialFlow 테마"><br><a href="http://keyin.me/" target="_blank" rel="external">http://keyin.me/</a><br>너무너무너무 맘에 들었다. 깔끔하고 원하는 기능 다 들어있고 세팅을 다 하고 기쁨 마음에 구글에도 등록해놨다.  </p>
 <p><img src="/images/hunBlog.JPG" alt="hun blog">  </p>
 <p>하지만 또 문제가 발생하였으니 파이어폭스에서 접속하면  </p>
-<p>![hun blog]/(images/hunBlog2.JPG)  </p>
+<p><img src="/images/hunBlog2.JPG" alt="hun blog">  </p>
 <p>반이 잘려나온다. 뭐지 설마 IE는…</p>
 <p><img src="/images/hunBlog3.JPG" alt="hun blog">  </p>
-<p><strong>아….</strong>  </p>
+<p><strong>아….</strong>  안 나온다.</p>
 <p>다시 테마를 바꾸자…  </p>
-<p> 깔끔한 화면에 (영어로 문서가 작성되어있고) 기능이 많지는 않지만 내가 필요한 기능은 다 있고 다른 브라우저에서 봤을 때도 똑같이 나오는 테마.  </p>
+<p>깔끔한 화면에 (영어로 문서가 작성되어있고) 기능이 많지는 않지만 내가 필요한 기능은 다 있고 다른 브라우저에서 봤을 때도 똑같이 나오는 테마.  </p>
 <p><img src="/images/themes4.JPG" alt="Icarus 테마">  </p>
 <p>이젠 쭈욱 가자…  </p>
 ]]></content>
