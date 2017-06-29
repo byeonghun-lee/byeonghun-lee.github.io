@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byeonghun-lee.github.io/"/>
-  <updated>2017-06-29T04:56:43.681Z</updated>
+  <updated>2017-06-29T05:46:09.039Z</updated>
   <id>https://byeonghun-lee.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/"/>
     <id>https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/</id>
     <published>2017-06-29T03:17:05.000Z</published>
-    <updated>2017-06-29T04:56:43.681Z</updated>
+    <updated>2017-06-29T05:46:09.039Z</updated>
     
-    <content type="html"><![CDATA[<p>프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.<br>인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.  </p>
+    <content type="html"><![CDATA[<p>프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.<br>인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.<br><a id="more"></a></p>
 <p>구글의 경우도 image API가 있었지만 지금은 더 이상 지원을 하지 않는다.<br><img src="/images/imageSearchAPI.JPG" alt="구글 이미지 API">  </p>
 <p>이젠 Google Custom Search를 이용해야 한다.<br>API를 사용하기위해 몇 가지 절차가 필요하다.  </p>
 <ul>
@@ -89,7 +89,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.&lt;br&gt;인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 
+      &lt;p&gt;프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.&lt;br&gt;인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.&lt;br&gt;
     
     </summary>
     

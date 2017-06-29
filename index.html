@@ -263,71 +263,10 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <p>프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.<br>인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.  </p>
-<p>구글의 경우도 image API가 있었지만 지금은 더 이상 지원을 하지 않는다.<br><img src="/images/imageSearchAPI.JPG" alt="구글 이미지 API">  </p>
-<p>이젠 Google Custom Search를 이용해야 한다.<br>API를 사용하기위해 몇 가지 절차가 필요하다.  </p>
-<ul>
-<li>일단 밑의 사이트에 접속한다.<br><a href="https://console.developers.google.com/apis" target="_blank" rel="external">https://console.developers.google.com/apis</a>  </li>
-</ul>
-<p><img src="/images/api1.JPG" alt="API 관리자 페이지"><br>내 경우 이미 API를 사용하고 있어서 이렇게 뜨는 데 아마 처음 시작하는 사람도 비슷할 것이다.  여기서 빨간 네모칸 부분을 클릭하고 다음그림처럼 따라한다.  </p>
-<p><img src="/images/api2.JPG" alt="프로젝트 추가">  </p>
-<ul>
-<li>이제 프로젝트 이름을 정해준다.  </li>
-</ul>
-<p><img src="/images/api3.JPG" alt="프로젝트 이름">  </p>
-<p>이젠 이런 화면이 나올 것이다.</p>
-<p><img src="/images/api4.JPG" alt="프로젝트 이름">  </p>
-<ul>
-<li>위 쪽에 API 사용 설정을 클릭한 다음 Custom Search API를 찾아 클릭한다.  </li>
-</ul>
-<p><img src="/images/api5.JPG" alt="커스텀 API 선택">  </p>
-<ul>
-<li>선택 후 위쪽에 사용설정을 선택하면 아래와 같은 화면이 나온다.  </li>
-</ul>
-<p><img src="/images/api6.JPG" alt="커스텀 API 설정">  </p>
-<ul>
-<li><p>화면에 보이는 것처럼 사용자 인증을 하라고 나오는 데 방법대로 하면 API key가 나온다.  </p>
-</li>
-<li><p>아래 사이트의 접속한 뒤 안내를 클릭하고 메뉴를 보면 JSON/Atom API가 있다.<br><a href="https://developers.google.com/custom-search/" target="_blank" rel="external">https://developers.google.com/custom-search/</a>  </p>
-</li>
-</ul>
-<p><img src="/images/customSearch1.JPG" alt="커스텀 서치 API 문서">  </p>
-<ul>
-<li>key값을 가져오기 위해 GET A KEY를 클릭한다.  </li>
-</ul>
-<p><img src="/images/customSearch2.JPG" alt="key값 가져오기">  </p>
-<ul>
-<li>프로젝트 명을 선택해주고 key값을 복사해둔다.  </li>
-</ul>
-<p><img src="/images/customSearch3.JPG" alt="key값 가져오기2"><br><img src="/images/customSearch4.JPG" alt="key값 가져오기3">  </p>
-<ul>
-<li>custom search api를 사용하기 위해선 Custom search engine ID가 필요하다. 발급을 위해 다른 페이지로 이동한다.  </li>
-</ul>
-<p><img src="/images/customSearch5.JPG" alt="Custom search engine ID 발급">  </p>
-<ul>
-<li>검색엔진을 추가하면 이런 화면을 볼 수 있다. 검색 사이트를 적으라고 했는 데 사이트가 있다면 적지만 공부나 개인프로젝트에서 주소가 없을 경우가 많다. 이 부분은 나중에 삭제할테니 아래처럼 적어줘도 된다.  </li>
-</ul>
-<p><img src="/images/customSearch6.JPG" alt="Custom search engine ID 발급2">  </p>
-<ul>
-<li>이제 이런 화면을 만날 수 있다. 검색 설정을 하기 위해 화면에 보이는 제어판을 클릭한다.  </li>
-</ul>
-<p><img src="/images/customSearch7.JPG" alt="Custom search engine ID 발급2">  </p>
-<ul>
-<li>밑에 검색할 사이트를 삭제해주고 난 이미지 검색을 사용하기 위해 설정을 바꿨다. 각자 알맞게 변경하면 된다.  </li>
-</ul>
-<p><img src="/images/customSearch8.JPG" alt="Custom search engine ID 발급2">  </p>
-<ul>
-<li><p>위 쪽에 세부정보에 검색엔진 ID라고 써있는 버튼을 클릭하면 ID를 얻을 수 있다.  </p>
-</li>
-<li><p>설정을 변경한 뒤엔 항상 맨 밑에 있는 업데이트 버튼을 클릭한다.  </p>
-</li>
-<li><p>이제 밑의 방식처럼 GET으로 정보를 받아오면 된다.</p>
-</li>
-</ul>
-<pre><code>GET https://www.googleapis.com/customsearch/v1?key=API키값&amp;cx=검색엔진ID&amp;q=검색어
-</code></pre><p>자세한 파라미터 값 설정은 아래 사이트를 참고하면 된다.<br><a href="https://developers.google.com/custom-search/json-api/v1/reference/cse/list?hl=ko" target="_blank" rel="external">https://developers.google.com/custom-search/json-api/v1/reference/cse/list?hl=ko</a>  </p>
-
+            <p><p>프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.<br>인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.<br></p>
+            <p class="article-more-link">
+                <a href="/2017/06/29/googleCustomSearch/#more">Read More</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -337,7 +276,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/" data-id="cj4hyl7h30000lsvguelu7pfc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/" data-id="cj4i0c34a00037cvgez24cre4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -480,7 +419,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/" data-id="cj4hyl7v40009lsvgy529xn1d" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/" data-id="cj4i0c34a00047cvgwxtg7yzf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -613,7 +552,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cj4hyl7v40008lsvgkoktabgv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cj4i0c34q00077cvgfurmjnjl" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
