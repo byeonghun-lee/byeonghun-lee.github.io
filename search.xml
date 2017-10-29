@@ -3,6 +3,34 @@
   
     
     <entry>
+      <title><![CDATA[컴퓨터과학 기초]]></title>
+      <url>/2017/10/29/cs50-1/</url>
+      <content type="html"><![CDATA[<p>취업을 하고 angularjs와 ionic1을 하면서 공부할게 많았다. 지금도 많지만 하다보니 어떤 프레임워크를 사용하던 기본인 javascript의 중요함을 계속 느꼈다.<br><a id="more"></a></p>
+<p>거기서 더 나아가서 컴퓨터 전공을 안 했기 때문에 일하면서 계속 아쉬움이 있었다. 사이버대학교나 방통대를 알아보고 이것저것 둘러 보다가 이 강좌를 알게되었다. </p>
+<p>처음엔 udacity에서 <a href="https://www.udacity.com/course/intro-to-computer-science--cs101" target="_blank" rel="external">Intro to Computer Science</a>를 들으려다가 지인에게 다른 수업도 추천 받은게 바로 <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank" rel="external">Introduction to Computer Science</a>이다. 선택에 가장 중요한 영향을 끼친건 역시…영어…</p>
+<p>항상 영어와 함께하지만 퇴근해서도 듣기라도 늘리자는 심정으로 해외 강의를 많이 들었다. 어느 순간 한글화만 되어 있다면 빨리 듣자라는 마음으로 컴퓨터 기초 수업도 한글화 되어있는 게 없을까 했는데 다행이 이 수업이 한글자막과 한글 수업자료로 제공되는 사이트가 있다. </p>
+<p><a href="http://www.edwith.org/connect_cs/joinLectures/10008" target="_blank" rel="external">Harvard CS50 x edwith</a>에 들어가면 잘 정리된 자료들을 볼 수 있다. 앞으로 퇴근 후 지금 보고 있는 자바스크립트 핵심가이드라는 책과 이 사이트로 공부할 것 같다.</p>
+<p>참고로 이 한글화된 동영상은 최신의 영상은 아니다. 최신의 영상을 보고 싶다면 유투브나 위쪽 Introduction to Computer Science링크를 이용하면 될테고, 아이폰을 쓰는 사람은 iTunes U에서 검색해도 수업을 볼 수 있다. 다만 아이폰에서 볼 때는 영문자막도 안 나오니 최신영상에 영문 자막정도만 원한다면 들을 수 있는 방법은 많다. </p>
+]]></content>
+      
+        <categories>
+            
+            <category> Computer Science </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> CS50 </tag>
+            
+            <tag> Computer Science </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Google Custom Search API에서 자료(이미지) 가져오기]]></title>
       <url>/2017/06/29/googleCustomSearch/</url>
       <content type="html"><![CDATA[<p>프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.<br>인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.<br><a id="more"></a></p>

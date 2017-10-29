@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byeonghun-lee.github.io/"/>
-  <updated>2017-06-29T05:46:09.039Z</updated>
+  <updated>2017-10-29T14:45:49.000Z</updated>
   <id>https://byeonghun-lee.github.io/</id>
   
   <author>
@@ -16,11 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>컴퓨터과학 기초</title>
+    <link href="https://byeonghun-lee.github.io/2017/10/29/cs50-1/"/>
+    <id>https://byeonghun-lee.github.io/2017/10/29/cs50-1/</id>
+    <published>2017-10-29T13:45:53.000Z</published>
+    <updated>2017-10-29T14:45:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>취업을 하고 angularjs와 ionic1을 하면서 공부할게 많았다. 지금도 많지만 하다보니 어떤 프레임워크를 사용하던 기본인 javascript의 중요함을 계속 느꼈다.<br><a id="more"></a></p>
+<p>거기서 더 나아가서 컴퓨터 전공을 안 했기 때문에 일하면서 계속 아쉬움이 있었다. 사이버대학교나 방통대를 알아보고 이것저것 둘러 보다가 이 강좌를 알게되었다. </p>
+<p>처음엔 udacity에서 <a href="https://www.udacity.com/course/intro-to-computer-science--cs101" target="_blank" rel="external">Intro to Computer Science</a>를 들으려다가 지인에게 다른 수업도 추천 받은게 바로 <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank" rel="external">Introduction to Computer Science</a>이다. 선택에 가장 중요한 영향을 끼친건 역시…영어…</p>
+<p>항상 영어와 함께하지만 퇴근해서도 듣기라도 늘리자는 심정으로 해외 강의를 많이 들었다. 어느 순간 한글화만 되어 있다면 빨리 듣자라는 마음으로 컴퓨터 기초 수업도 한글화 되어있는 게 없을까 했는데 다행이 이 수업이 한글자막과 한글 수업자료로 제공되는 사이트가 있다. </p>
+<p><a href="http://www.edwith.org/connect_cs/joinLectures/10008" target="_blank" rel="external">Harvard CS50 x edwith</a>에 들어가면 잘 정리된 자료들을 볼 수 있다. 앞으로 퇴근 후 지금 보고 있는 자바스크립트 핵심가이드라는 책과 이 사이트로 공부할 것 같다.</p>
+<p>참고로 이 한글화된 동영상은 최신의 영상은 아니다. 최신의 영상을 보고 싶다면 유투브나 위쪽 Introduction to Computer Science링크를 이용하면 될테고, 아이폰을 쓰는 사람은 iTunes U에서 검색해도 수업을 볼 수 있다. 다만 아이폰에서 볼 때는 영문자막도 안 나오니 최신영상에 영문 자막정도만 원한다면 들을 수 있는 방법은 많다. </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;취업을 하고 angularjs와 ionic1을 하면서 공부할게 많았다. 지금도 많지만 하다보니 어떤 프레임워크를 사용하던 기본인 javascript의 중요함을 계속 느꼈다.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Computer Science" scheme="https://byeonghun-lee.github.io/categories/Computer-Science/"/>
+    
+    
+      <category term="CS50" scheme="https://byeonghun-lee.github.io/tags/CS50/"/>
+    
+      <category term="Computer Science" scheme="https://byeonghun-lee.github.io/tags/Computer-Science/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Google Custom Search API에서 자료(이미지) 가져오기</title>
     <link href="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/"/>
     <id>https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/</id>
     <published>2017-06-29T03:17:05.000Z</published>
-    <updated>2017-06-29T05:46:09.039Z</updated>
+    <updated>2017-06-29T05:46:08.000Z</updated>
     
     <content type="html"><![CDATA[<p>프로젝트를 진행하면서 사진을 외부에서 가져오고 싶은데 막히는 부분이 많았다.<br>인스타그램은 정책변경으로 자신의 사진 일부만을 가져올 수 있고 이미지 검색으로 가져오려면 따로 인증이 필요하다. 네이버나 다음의 경우도 image API가 있지만 HTTP 접근 제어(CORS)문제로 가져오기가 쉽지 않다.<br><a id="more"></a></p>
 <p>구글의 경우도 image API가 있었지만 지금은 더 이상 지원을 하지 않는다.<br><img src="/images/imageSearchAPI.JPG" alt="구글 이미지 API">  </p>
@@ -105,7 +135,7 @@
     <link href="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/"/>
     <id>https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/</id>
     <published>2017-06-07T12:09:58.000Z</published>
-    <updated>2017-06-07T13:05:34.289Z</updated>
+    <updated>2017-06-07T13:05:34.000Z</updated>
     
     <content type="html"><![CDATA[<p>hexo로 블로그를 시작하며 어떤 테마를 사용할 지 고민했다.  프론트엔드 개발에 관한 포스팅보다 테마 바꾸기만 몇 번째인지…처음엔 일단 화려하고 애니메이션 많이 들어간 테마만 봤다. 그래서 선택한 것이<br><a id="more"></a></p>
 <p><img src="/images/themes1.JPG" alt="spfk 테마"><br><a href="https://luuman.github.io/" target="_blank" rel="external">https://luuman.github.io/</a>  </p>
@@ -143,7 +173,7 @@
     <link href="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/"/>
     <id>https://byeonghun-lee.github.io/2017/05/09/smallBookStore/</id>
     <published>2017-05-09T08:44:16.000Z</published>
-    <updated>2017-06-07T11:36:19.510Z</updated>
+    <updated>2017-06-07T11:36:18.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="새-프로젝트-시작"><a href="#새-프로젝트-시작" class="headerlink" title="새 프로젝트 시작"></a>새 프로젝트 시작</h4><p>블로그 정리가 안돼서 모두 지우고 새로 만들었다. 덕분에 글도 다 지워졌다.<br>학원에서 팀으로 만들었던 개인책장 프로젝트 말고 하나 더 Vuejs를 이용해서 프로젝트를 만들고 싶어서 많이 쓸 것 같은데 저번 프로젝트에선 사용하지 못 했던 기능을 넣어보고 싶었다.<br><a id="more"></a><br>여러 ui kit도 보고 어떤 식으로 만들어 볼까 고민만 하던 때에 이러다 시작도 못 하겠다 싶어서 일단은 시작했다. </p>
 <h4 id="디자인"><a href="#디자인" class="headerlink" title="디자인"></a>디자인</h4><p><img src="https://github.com/byeonghun-lee/byeonghun-lee.github.io/blob/master/2017/05/09/smallBookStore/sketch.jpg?raw=true" alt="스케치">  </p>
