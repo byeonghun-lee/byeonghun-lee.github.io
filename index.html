@@ -170,11 +170,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                4
+                5
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                5
+                9
                 <span>tags</span>
             </div>
         </div>
@@ -211,6 +211,149 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-study-01" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/2018/02/19/study-01/" itemprop="url">
+            <img src="/images/studyBook.png" class="article-banner" />
+        </a>
+	
+
+
+
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/02/19/study-01/">자바스크립트 데이터구조와 알고리즘 스터디_01</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/02/19/study-01/">
+            <time datetime="2018-02-19T14:34:59.000Z" itemprop="datePublished">2018-02-19</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Study/">Study</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Algorithms/">Algorithms</a>, <a class="tag-link" href="/tags/Data-Structures/">Data Structures</a>, <a class="tag-link" href="/tags/Javascript/">Javascript</a>, <a class="tag-link" href="/tags/Study/">Study</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 id="Learning-JavaScript-Data-Structures-and-Algorithms"><a href="#Learning-JavaScript-Data-Structures-and-Algorithms" class="headerlink" title="Learning JavaScript Data Structures and Algorithms"></a>Learning JavaScript Data Structures and Algorithms</h2><h4 id="비트-연산자"><a href="#비트-연산자" class="headerlink" title="비트 연산자"></a>비트 연산자</h4><p>p.42<br>MDN 연산자 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators" target="_blank" rel="external">링크</a><br>MDN 비트 연산자 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Obsolete_Pages/Core_JavaScript_1.5_Guide/Operators/Bitwise_Operators" target="_blank" rel="external">링크</a><br></p>
+            <p class="article-more-link">
+                <a href="/2018/02/19/study-01/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="https://byeonghun-lee.github.io/2018/02/19/study-01/" data-id="cjdx8t3c60006fn9o93w6d652" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://byeonghun-lee.github.io/2018/02/19/study-01/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://byeonghun-lee.github.io/2018/02/19/study-01/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-cs50-1" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -276,7 +419,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/10/29/cs50-1/" data-id="cj9cv9pcm0002pa9oav4chbh8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/10/29/cs50-1/" data-id="cjdx8t3bn0000fn9o6l02emlq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -419,7 +562,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/" data-id="cj9cv9pcw0006pa9owwsdtrpe" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/" data-id="cjdx8t3by0004fn9oecx51pc8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -562,7 +705,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/" data-id="cj9cv9pcf0000pa9od10i2uo6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/" data-id="cjdx8t3bs0001fn9o3j6tdi9k" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -695,7 +838,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cj9cv9pd10008pa9ocvxeguma" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cjdx8t3c20005fn9od1ke64l8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -786,6 +929,25 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/02/19/study-01/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/studyBook.png)" alt="자바스크립트 데이터구조와 알고리즘 스터디_01" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Study/">Study</a></p>
+                            <p class="item-title"><a href="/2018/02/19/study-01/" class="title">자바스크립트 데이터구조와 알고리즘 스터디_01</a></p>
+                            <p class="item-date"><time datetime="2018-02-19T14:34:59.000Z" itemprop="datePublished">2018-02-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2017/10/29/cs50-1/" class="thumbnail">
     
     
@@ -868,7 +1030,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/API/">API</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/API/">API</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Study/">Study</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -877,7 +1039,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">10월 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">6월 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">5월 2017</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">10월 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">6월 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">5월 2017</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -886,7 +1048,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CS50/">CS50</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Science/">Computer Science</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-customSearch/">google customSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/프로젝트시작/">프로젝트시작</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithms/">Algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CS50/">CS50</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Science/">Computer Science</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/">Study</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-customSearch/">google customSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/프로젝트시작/">프로젝트시작</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -895,7 +1057,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/CS50/" style="font-size: 10px;">CS50</a> <a href="/tags/Computer-Science/" style="font-size: 10px;">Computer Science</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/google-customSearch/" style="font-size: 10px;">google customSearch</a> <a href="/tags/프로젝트시작/" style="font-size: 10px;">프로젝트시작</a>
+            <a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CS50/" style="font-size: 10px;">CS50</a> <a href="/tags/Computer-Science/" style="font-size: 10px;">Computer Science</a> <a href="/tags/Data-Structures/" style="font-size: 10px;">Data Structures</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Study/" style="font-size: 10px;">Study</a> <a href="/tags/google-customSearch/" style="font-size: 10px;">google customSearch</a> <a href="/tags/프로젝트시작/" style="font-size: 10px;">프로젝트시작</a>
         </div>
     </div>
 
@@ -924,7 +1086,7 @@ ga('send', 'pageview');
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2017 Byeonghun Lee<br>
+            &copy; 2018 Byeonghun Lee<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
