@@ -263,49 +263,13 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <ul>
+            <p><ul>
 <li>새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.  </li>
 </ul>
-<p>##타입스크립트  퀵스타트 3장 스터디  </p>
-<h4 id="변수-선언"><a href="#변수-선언" class="headerlink" title="변수 선언"></a>변수 선언</h4><p>자바스크립트에서 var 선언하면 호이스팅과 블록레벨스코프를 지원하지 않는 문제가 있다. 이부분은 타입스크립트라기 보다 es6에서 새로 도입된 변수 선언의 내용이다.  </p>
-<p>호이스팅은 선언한 변수가 스코프의 최상위로 끌어올려지는 현상이다. 함수선언도 호이스팅되는데 처음엔 나도 구분없이 사용하다가 회사에 다니며 제대로 썼다.</p>
-<p>여기서 궁금한 건 호이스팅이되니 변수선언과 함수선언을 위에다 쓰는건 코드의 가독성 때문일까 아니면 정말 코드 최적화에 영향을 끼칠까?  </p>
-<p>######찾아보기<br><a href="https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach" target="_blank" rel="external">https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach</a><br><a href="https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822" target="_blank" rel="external">https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822</a></p>
-<p>이런 글들을 보면 위쪽에 함수와 변수 선언은 성능 문제라기 보다 스타일 문제일까?<br>(<a href="https://stackoverflow.com/questions/52944892/does-the-top-of-the-function-declaration-and-variable-declaration-help-improve-p" target="_blank" rel="external">https://stackoverflow.com/questions/52944892/does-the-top-of-the-function-declaration-and-variable-declaration-help-improve-p</a>)<br>직접 질문 올렸음.  </p>
-<p>예전에 블로그 글에서 var 선언과 let선언의 속도 차이 글을 본거 같다. </p>
-<p>######찾아보기<br><a href="https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw" target="_blank" rel="external">https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw</a>  </p>
-<p>let 선언자는 다음과 같은 특징을 가진다.  </p>
-<ul>
-<li>같은 블록 내에서 같은 이름의 변수를 중복해서 선언할 수 없음  </li>
-<li>변수를 초기화하기 전에는 변수에 접근할 수 없게 해서 호이스팅을 방지  </li>
-<li>선언할 변수에 블록 레벨 스코프를 적용  </li>
-</ul>
-<p>블록 레벨 스코프의 좋은 점은 뭘까? 블록만 다르면 변수 이름을 똑같이 쓸 수 있다? 그게 장점인가? 여러명이 작업을 할때 아무리 역할에 맞게 작성하더라도 변수이름이 겹칠 수 있기 떄문일까? </p>
-<p>######찾아보기<br><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
-<p>const는 변수를 상수로 선언할 떄 사용한다. const를 이용해 변수를 선언하면 초기화는 가능하지만 재할당되지 않는 읽기 전용이다. 상수 말고도 let과 다른 점은 선언시 초기화를 해줘야 한다는 것이다. </p>
-<p>const의 경우 재할당은 할 수 없지만 객체 리터럴의 속성으로 변경은 가능하다. </p>
-<pre><code>const hun = {  
-    age: 30,  
-    nickName = &quot;hun08&quot;  
-}  
-
-hun = {  
-    age: 31,  
-    nickName = &quot;hun0811&quot;  
-}
-</code></pre><p>위처럼 재할당을 할 수 없다. 하지만  </p>
-<pre><code>const hun = {  
-    age: 30,  
-    nickName = &quot;hun08&quot;  
-}  
-
-hun.age = 31;
-</code></pre><p>위처럼 변경은 가능하다.  </p>
-<h4 id="타입-검사와-타입-선언"><a href="#타입-검사와-타입-선언" class="headerlink" title="타입 검사와 타입 선언"></a>타입 검사와 타입 선언</h4><p>정적 타입 검사 -&gt; 자바, C++<br>동적 타입 검사 -&gt; 자바스크립트  </p>
-<p>점진적 타입 검사 -&gt; 타입스크립트, 파이썬  </p>
-<p>점진적 타입 검사 : 컴파일 시간에 타입 검사를 수행하면서 필요에 따라 타입 선언의 생략을 허용. 타입을 선언을 생략하면 암시적 형변환이 일어남.  </p>
-
+<p>##타입스크립트  퀵스타트 3장 스터디  </p></p>
+            <p class="article-more-link">
+                <a href="/2018/10/21/typeScript-chapter-3/#more">Read More</a>
+            </p>
         
         </div>
         <footer class="article-footer">
@@ -315,7 +279,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/" data-id="cjnlj453500091c9ob20o7nl6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/" data-id="cjnlj5stu000b309otaq27iqd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -458,7 +422,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2018/02/19/study-01/" data-id="cjnlj4537000d1c9o5eysrq59" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2018/02/19/study-01/" data-id="cjnlj5str0007309obhmrxgwa" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -601,7 +565,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/10/29/cs50-1/" data-id="cjnlj452n00021c9ozzl2118c" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/10/29/cs50-1/" data-id="cjnlj5ste0002309ops2iy8ax" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -744,7 +708,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/" data-id="cjnlj453100081c9oh8lt9bxh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/06/29/googleCustomSearch/" data-id="cjnlj5stl0005309ojvhfamli" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -887,7 +851,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/" data-id="cjnlj452f00001c9on7f8m0ef" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/06/07/apply-the-hexo-themes/" data-id="cjnlj5st70000309ofuslj3g4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1020,7 +984,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cjnlj452x00061c9okz8b7pup" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cjnlj5stp0006309o388le8an" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byeonghun-lee.github.io/"/>
-  <updated>2018-10-23T09:26:57.231Z</updated>
+  <updated>2018-10-23T09:31:20.506Z</updated>
   <id>https://byeonghun-lee.github.io/</id>
   
   <author>
@@ -20,12 +20,13 @@
     <link href="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/"/>
     <id>https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/</id>
     <published>2018-10-21T12:31:26.000Z</published>
-    <updated>2018-10-23T09:26:57.231Z</updated>
+    <updated>2018-10-23T09:31:20.506Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.  </li>
 </ul>
 <p>##타입스크립트  퀵스타트 3장 스터디  </p>
+<a id="more"></a>
 <h4 id="변수-선언"><a href="#변수-선언" class="headerlink" title="변수 선언"></a>변수 선언</h4><p>자바스크립트에서 var 선언하면 호이스팅과 블록레벨스코프를 지원하지 않는 문제가 있다. 이부분은 타입스크립트라기 보다 es6에서 새로 도입된 변수 선언의 내용이다.  </p>
 <p>호이스팅은 선언한 변수가 스코프의 최상위로 끌어올려지는 현상이다. 함수선언도 호이스팅되는데 처음엔 나도 구분없이 사용하다가 회사에 다니며 제대로 썼다.</p>
 <p>여기서 궁금한 건 호이스팅이되니 변수선언과 함수선언을 위에다 쓰는건 코드의 가독성 때문일까 아니면 정말 코드 최적화에 영향을 끼칠까?  </p>
@@ -68,16 +69,18 @@ hun.age = 31;
     <summary type="html">
     
       &lt;ul&gt;
-&lt;li&gt;새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 
+&lt;li&gt;새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;##타입스크립트  퀵스타트 3장 스터디  &lt;/p&gt;
     
     </summary>
     
       <category term="Study" scheme="https://byeonghun-lee.github.io/categories/Study/"/>
     
     
-      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
-    
       <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
+    
+      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
     
   </entry>
   
@@ -137,13 +140,13 @@ console.log(typeof a[0]); //&quot;undefined&quot;
       <category term="Study" scheme="https://byeonghun-lee.github.io/categories/Study/"/>
     
     
-      <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
-    
       <category term="Javascript" scheme="https://byeonghun-lee.github.io/tags/Javascript/"/>
     
       <category term="Data Structures" scheme="https://byeonghun-lee.github.io/tags/Data-Structures/"/>
     
       <category term="Algorithms" scheme="https://byeonghun-lee.github.io/tags/Algorithms/"/>
+    
+      <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
     
   </entry>
   
