@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Hun Blog">
 <meta property="og:description" content="새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.    타입스크립트  퀵스타트 3장 스터디">
 <meta property="og:image" content="https://byeonghun-lee.github.io/images/typescript.png">
-<meta property="og:updated_time" content="2018-10-23T09:31:43.518Z">
+<meta property="og:updated_time" content="2018-10-28T05:17:39.287Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TypeScript_chapter_3">
 <meta name="twitter:description" content="새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.    타입스크립트  퀵스타트 3장 스터디">
@@ -96,7 +96,7 @@ ga('send', 'pageview');
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -115,10 +115,10 @@ ga('send', 'pageview');
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -149,7 +149,7 @@ ga('send', 'pageview');
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
     </div>
 
                 </td>
@@ -169,16 +169,16 @@ ga('send', 'pageview');
             <h2 id="name">Byeonghun Lee</h2>
             <h3 id="title">Front-end Developer</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Korea</span>
-            <a id="follow" target="_blank" href="https://github.com/byeonghun-lee">FOLLOW</a>
+            <a id="follow" target="_blank" href="https://github.com/byeonghun-lee">SEGUIR</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                6
-                <span>posts</span>
+                7
+                <span>Entradas</span>
             </div>
             <div class="article-info-block">
                 10
-                <span>tags</span>
+                <span>Etiquetas</span>
             </div>
         </div>
         
@@ -271,10 +271,10 @@ ga('send', 'pageview');
 <h4 id="변수-선언"><a href="#변수-선언" class="headerlink" title="변수 선언"></a>변수 선언</h4><p>자바스크립트에서 var 선언하면 호이스팅과 블록레벨스코프를 지원하지 않는 문제가 있다. 이부분은 타입스크립트라기 보다 es6에서 새로 도입된 변수 선언의 내용이다.  </p>
 <p>호이스팅은 선언한 변수가 스코프의 최상위로 끌어올려지는 현상이다. 함수선언도 호이스팅되는데 처음엔 나도 구분없이 사용하다가 회사에 다니며 제대로 썼다.</p>
 <p>여기서 궁금한 건 호이스팅이되니 변수선언과 함수선언을 위에다 쓰는건 코드의 가독성 때문일까 아니면 정말 코드 최적화에 영향을 끼칠까?  </p>
-<p>######찾아보기<br><a href="https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach" target="_blank" rel="external">https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach</a><br><a href="https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822" target="_blank" rel="external">https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822</a></p>
+<h6 id="찾아보기"><a href="#찾아보기" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach" target="_blank" rel="external">https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach</a><br><a href="https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822" target="_blank" rel="external">https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822</a></p>
 <p>이런 글들을 보면 위쪽에 함수와 변수 선언은 성능 문제라기 보다 스타일 문제일까?<br>(<a href="https://stackoverflow.com/questions/52944892/does-the-top-of-the-function-declaration-and-variable-declaration-help-improve-p" target="_blank" rel="external">https://stackoverflow.com/questions/52944892/does-the-top-of-the-function-declaration-and-variable-declaration-help-improve-p</a>)<br>직접 질문 올렸음.  </p>
 <p>예전에 블로그 글에서 var 선언과 let선언의 속도 차이 글을 본거 같다. </p>
-<p>######찾아보기<br><a href="https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw" target="_blank" rel="external">https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw</a>  </p>
+<h6 id="찾아보기-1"><a href="#찾아보기-1" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw" target="_blank" rel="external">https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw</a>  </p>
 <p>let 선언자는 다음과 같은 특징을 가진다.  </p>
 <ul>
 <li>같은 블록 내에서 같은 이름의 변수를 중복해서 선언할 수 없음  </li>
@@ -282,7 +282,7 @@ ga('send', 'pageview');
 <li>선언할 변수에 블록 레벨 스코프를 적용  </li>
 </ul>
 <p>블록 레벨 스코프의 좋은 점은 뭘까? 블록만 다르면 변수 이름을 똑같이 쓸 수 있다? 그게 장점인가? 여러명이 작업을 할때 아무리 역할에 맞게 작성하더라도 변수이름이 겹칠 수 있기 떄문일까? </p>
-<p>######찾아보기<br><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
+<h6 id="찾아보기-2"><a href="#찾아보기-2" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
 <p>const는 변수를 상수로 선언할 떄 사용한다. const를 이용해 변수를 선언하면 초기화는 가능하지만 재할당되지 않는 읽기 전용이다. 상수 말고도 let과 다른 점은 선언시 초기화를 해줘야 한다는 것이다. </p>
 <p>const의 경우 재할당은 할 수 없지만 객체 리터럴의 속성으로 변경은 가능하다. </p>
 <pre><code>const hun = {  
@@ -315,7 +315,7 @@ hun.age = 31;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/" data-id="cjnlj6cuy00083u9omto8na9u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/" data-id="cjnsfbh1r0006j69ozlhygkw2" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -383,7 +383,7 @@ hun.age = 31;
 
             
     
-        <a href="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/">Comments</a>
+        <a href="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/">Comentarios</a>
     
 
         </footer>
@@ -392,9 +392,18 @@ hun.age = 31;
         
 <nav id="article-nav">
     
+        <a href="/2018/10/28/typeScript-chapter-4/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Más nuevo</strong>
+            <div class="article-nav-title">
+                
+                    typeScript_chapter_4
+                
+            </div>
+        </a>
+    
     
         <a href="/2018/02/19/study-01/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Older</strong>
+            <strong class="article-nav-caption">Más viejo</strong>
             <div class="article-nav-title">자바스크립트 데이터구조와 알고리즘 스터디_01</div>
         </a>
     
@@ -421,9 +430,28 @@ hun.age = 31;
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">recent</h3>
+        <h3 class="widget-title">Recientes</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/10/28/typeScript-chapter-4/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/typescript.png)" alt="typeScript_chapter_4" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/10/28/typeScript-chapter-4/" class="title">typeScript_chapter_4</a></p>
+                            <p class="item-date"><time datetime="2018-10-28T05:12:27.000Z" itemprop="datePublished">2018-10-28</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -501,25 +529,6 @@ hun.age = 31;
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/06/07/apply-the-hexo-themes/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/hexo-logo.png)" alt="Hexo Themes(테마) 적용기" class="thumbnail-image"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
-                            <p class="item-title"><a href="/2017/06/07/apply-the-hexo-themes/" class="title">Hexo Themes(테마) 적용기</a></p>
-                            <p class="item-date"><time datetime="2017-06-07T12:09:58.000Z" itemprop="datePublished">2017-06-07</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -527,7 +536,7 @@ hun.age = 31;
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">categories</h3>
+        <h3 class="widget-title">Categorias</h3>
         <div class="widget">
             <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/API/">API</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Study/">Study</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
         </div>
@@ -536,34 +545,34 @@ hun.age = 31;
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">Archivos</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">10월 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">6월 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">5월 2017</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">10월 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">6월 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">5월 2017</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">tags</h3>
+        <h3 class="widget-title">Etiquetas</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithms/">Algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CS50/">CS50</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Science/">Computer Science</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/">Study</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TypeScript/">TypeScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-customSearch/">google customSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/프로젝트시작/">프로젝트시작</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithms/">Algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CS50/">CS50</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Science/">Computer Science</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/">Study</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TypeScript/">TypeScript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-customSearch/">google customSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/프로젝트시작/">프로젝트시작</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">Nube de etiquetas</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CS50/" style="font-size: 10px;">CS50</a> <a href="/tags/Computer-Science/" style="font-size: 10px;">Computer Science</a> <a href="/tags/Data-Structures/" style="font-size: 10px;">Data Structures</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Study/" style="font-size: 20px;">Study</a> <a href="/tags/TypeScript/" style="font-size: 10px;">TypeScript</a> <a href="/tags/google-customSearch/" style="font-size: 10px;">google customSearch</a> <a href="/tags/프로젝트시작/" style="font-size: 10px;">프로젝트시작</a>
+            <a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CS50/" style="font-size: 10px;">CS50</a> <a href="/tags/Computer-Science/" style="font-size: 10px;">Computer Science</a> <a href="/tags/Data-Structures/" style="font-size: 10px;">Data Structures</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Study/" style="font-size: 20px;">Study</a> <a href="/tags/TypeScript/" style="font-size: 15px;">TypeScript</a> <a href="/tags/google-customSearch/" style="font-size: 10px;">google customSearch</a> <a href="/tags/프로젝트시작/" style="font-size: 10px;">프로젝트시작</a>
         </div>
     </div>
 
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title">Links</h3>
         <div class="widget">
             <ul>
                 

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byeonghun-lee.github.io/"/>
-  <updated>2018-10-23T09:31:43.518Z</updated>
+  <updated>2018-10-28T05:14:10.152Z</updated>
   <id>https://byeonghun-lee.github.io/</id>
   
   <author>
@@ -16,11 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>typeScript_chapter_4</title>
+    <link href="https://byeonghun-lee.github.io/2018/10/28/typeScript-chapter-4/"/>
+    <id>https://byeonghun-lee.github.io/2018/10/28/typeScript-chapter-4/</id>
+    <published>2018-10-28T05:12:27.000Z</published>
+    <updated>2018-10-28T05:14:10.152Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="타입스크립트-퀵스타트-4장-스터디"><a href="#타입스크립트-퀵스타트-4장-스터디" class="headerlink" title="타입스크립트  퀵스타트 4장 스터디"></a>타입스크립트  퀵스타트 4장 스터디</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;타입스크립트-퀵스타트-4장-스터디&quot;&gt;&lt;a href=&quot;#타입스크립트-퀵스타트-4장-스터디&quot; class=&quot;headerlink&quot; title=&quot;타입스크립트  퀵스타트 4장 스터디&quot;&gt;&lt;/a&gt;타입스크립트  퀵스타트 4장 스터디&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
+    
+      <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
+    
+  </entry>
+  
+  <entry>
     <title>TypeScript_chapter_3</title>
     <link href="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/"/>
     <id>https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/</id>
     <published>2018-10-21T12:31:26.000Z</published>
-    <updated>2018-10-23T09:31:43.518Z</updated>
+    <updated>2018-10-28T05:17:39.287Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.  </li>
@@ -29,10 +51,10 @@
 <h4 id="변수-선언"><a href="#변수-선언" class="headerlink" title="변수 선언"></a>변수 선언</h4><p>자바스크립트에서 var 선언하면 호이스팅과 블록레벨스코프를 지원하지 않는 문제가 있다. 이부분은 타입스크립트라기 보다 es6에서 새로 도입된 변수 선언의 내용이다.  </p>
 <p>호이스팅은 선언한 변수가 스코프의 최상위로 끌어올려지는 현상이다. 함수선언도 호이스팅되는데 처음엔 나도 구분없이 사용하다가 회사에 다니며 제대로 썼다.</p>
 <p>여기서 궁금한 건 호이스팅이되니 변수선언과 함수선언을 위에다 쓰는건 코드의 가독성 때문일까 아니면 정말 코드 최적화에 영향을 끼칠까?  </p>
-<p>######찾아보기<br><a href="https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach" target="_blank" rel="external">https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach</a><br><a href="https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822" target="_blank" rel="external">https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822</a></p>
+<h6 id="찾아보기"><a href="#찾아보기" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach" target="_blank" rel="external">https://stackoverflow.com/questions/5053073/is-defining-every-variable-at-the-top-always-the-best-approach</a><br><a href="https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822" target="_blank" rel="external">https://medium.com/@bluepnume/theres-no-need-to-define-all-javascript-vars-once-at-the-top-of-a-function-and-there-hasn-t-been-a66b31f21822</a></p>
 <p>이런 글들을 보면 위쪽에 함수와 변수 선언은 성능 문제라기 보다 스타일 문제일까?<br>(<a href="https://stackoverflow.com/questions/52944892/does-the-top-of-the-function-declaration-and-variable-declaration-help-improve-p" target="_blank" rel="external">https://stackoverflow.com/questions/52944892/does-the-top-of-the-function-declaration-and-variable-declaration-help-improve-p</a>)<br>직접 질문 올렸음.  </p>
 <p>예전에 블로그 글에서 var 선언과 let선언의 속도 차이 글을 본거 같다. </p>
-<p>######찾아보기<br><a href="https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw" target="_blank" rel="external">https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw</a>  </p>
+<h6 id="찾아보기-1"><a href="#찾아보기-1" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw" target="_blank" rel="external">https://gomugom.github.io/let-vs-var-performance-compare/?fbclid=IwAR3acpyDHM8ku8DaOdES5qWAsrfeUb3kYK6rWMxQrFbM9z5f_A4kB0VhvWw</a>  </p>
 <p>let 선언자는 다음과 같은 특징을 가진다.  </p>
 <ul>
 <li>같은 블록 내에서 같은 이름의 변수를 중복해서 선언할 수 없음  </li>
@@ -40,7 +62,7 @@
 <li>선언할 변수에 블록 레벨 스코프를 적용  </li>
 </ul>
 <p>블록 레벨 스코프의 좋은 점은 뭘까? 블록만 다르면 변수 이름을 똑같이 쓸 수 있다? 그게 장점인가? 여러명이 작업을 할때 아무리 역할에 맞게 작성하더라도 변수이름이 겹칠 수 있기 떄문일까? </p>
-<p>######찾아보기<br><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
+<h6 id="찾아보기-2"><a href="#찾아보기-2" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
 <p>const는 변수를 상수로 선언할 떄 사용한다. const를 이용해 변수를 선언하면 초기화는 가능하지만 재할당되지 않는 읽기 전용이다. 상수 말고도 let과 다른 점은 선언시 초기화를 해줘야 한다는 것이다. </p>
 <p>const의 경우 재할당은 할 수 없지만 객체 리터럴의 속성으로 변경은 가능하다. </p>
 <pre><code>const hun = {  

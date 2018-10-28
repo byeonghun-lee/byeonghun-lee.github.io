@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Etiqueta: CS50 | Hun Blog</title>
+    <title>Hun Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="A blog of Byeonghun">
 <meta name="keywords" content="blog,Front End,IT,Web Front End,Byeonghun Lee,Byeonghun">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hun Blog">
-<meta property="og:url" content="https://byeonghun-lee.github.io/tags/CS50/index.html">
+<meta property="og:url" content="https://byeonghun-lee.github.io/page/2/index.html">
 <meta property="og:site_name" content="Hun Blog">
 <meta property="og:description" content="A blog of Byeonghun">
 <meta name="twitter:card" content="summary">
@@ -211,49 +211,142 @@ ga('send', 'pageview');
 
             
             <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#CS50</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+    <article id="post-smallBookStore" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
         <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2017/10/29/cs50-1/">컴퓨터과학 기초</a>
+            <a class="article-title" href="/2017/05/09/smallBookStore/">smallBookStore</a>
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/10/29/cs50-1/">
-            <time datetime="2017-10-29T13:45:53.000Z" itemprop="datePublished">2017-10-29</time>
+        <a href="/2017/05/09/smallBookStore/">
+            <time datetime="2017-05-09T08:44:16.000Z" itemprop="datePublished">2017-05-09</time>
         </a>
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Computer-Science/">Computer Science</a>
+        <a class="article-category-link" href="/categories/Project/">Project</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/CS50/">CS50</a>, <a class="tag-link" href="/tags/Computer-Science/">Computer Science</a>
+        <a class="tag-link" href="/tags/프로젝트시작/">프로젝트시작</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h4 id="새-프로젝트-시작"><a href="#새-프로젝트-시작" class="headerlink" title="새 프로젝트 시작"></a>새 프로젝트 시작</h4><p>블로그 정리가 안돼서 모두 지우고 새로 만들었다. 덕분에 글도 다 지워졌다.<br>학원에서 팀으로 만들었던 개인책장 프로젝트 말고 하나 더 Vuejs를 이용해서 프로젝트를 만들고 싶어서 많이 쓸 것 같은데 저번 프로젝트에선 사용하지 못 했던 기능을 넣어보고 싶었다.<br></p>
+            <p class="article-more-link">
+                <a href="/2017/05/09/smallBookStore/#more">Read More</a>
+            </p>
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
 </div>
+
+    <a data-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/" data-id="cjnsfbh24000dj69o4xdrhfu4" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://byeonghun-lee.github.io/2017/05/09/smallBookStore/">Comentarios</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <nav id="page-nav">
+        <a class="extend prev" rel="prev" href="/">&laquo; Anterior</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
 </section>
             
                 
