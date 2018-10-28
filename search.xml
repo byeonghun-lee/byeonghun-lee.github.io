@@ -5,14 +5,18 @@
     <entry>
       <title><![CDATA[typeScript_chapter_4]]></title>
       <url>/2018/10/28/typeScript-chapter-4/</url>
-      <content type="html"><![CDATA[<h2 id="타입스크립트-퀵스타트-4장-스터디"><a href="#타입스크립트-퀵스타트-4장-스터디" class="headerlink" title="타입스크립트  퀵스타트 4장 스터디"></a>타입스크립트  퀵스타트 4장 스터디</h2>]]></content>
+      <content type="html"><![CDATA[<h2 id="타입스크립트-퀵스타트-4장-스터디"><a href="#타입스크립트-퀵스타트-4장-스터디" class="headerlink" title="타입스크립트  퀵스타트 4장 스터디"></a>타입스크립트  퀵스타트 4장 스터디</h2><a id="more"></a>
+<h5 id="ES6의-for-of-문"><a href="#ES6의-for-of-문" class="headerlink" title="ES6의 for of 문"></a>ES6의 for of 문</h5><p>인덱스를 이용해 값을 가져올 수 있는 for in 문과 달리 for of 문은 곧바로 값을 가져올 수 있음.  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> value <span class="keyword">of</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]) &#123;</div><div class="line">    <span class="built_in">console</span>.log(value)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>for 문에서 const를 사용시 상수가 되어 증가 값이 바뀌지 않기 때문에 let을 사용하지만 for of문에선 사용할 수 있다.  </p>
+]]></content>
       
         
         <tags>
             
-            <tag> TypeScript </tag>
-            
             <tag> Study </tag>
+            
+            <tag> TypeScript </tag>
             
         </tags>
         
@@ -42,23 +46,10 @@
 <h6 id="찾아보기-2"><a href="#찾아보기-2" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
 <p>const는 변수를 상수로 선언할 떄 사용한다. const를 이용해 변수를 선언하면 초기화는 가능하지만 재할당되지 않는 읽기 전용이다. 상수 말고도 let과 다른 점은 선언시 초기화를 해줘야 한다는 것이다. </p>
 <p>const의 경우 재할당은 할 수 없지만 객체 리터럴의 속성으로 변경은 가능하다. </p>
-<pre><code>const hun = {  
-    age: 30,  
-    nickName = &quot;hun08&quot;  
-}  
-
-hun = {  
-    age: 31,  
-    nickName = &quot;hun0811&quot;  
-}
-</code></pre><p>위처럼 재할당을 할 수 없다. 하지만  </p>
-<pre><code>const hun = {  
-    age: 30,  
-    nickName = &quot;hun08&quot;  
-}  
-
-hun.age = 31;
-</code></pre><p>위처럼 변경은 가능하다.  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> hun = &#123;  </div><div class="line">    <span class="attr">age</span>: <span class="number">30</span>,  </div><div class="line">    nickName = <span class="string">"hun08"</span>  </div><div class="line">&#125;  </div><div class="line"></div><div class="line">hun = &#123;  </div><div class="line">    <span class="attr">age</span>: <span class="number">31</span>,  </div><div class="line">    nickName = <span class="string">"hun0811"</span>  </div><div class="line">&#125;  </div></pre></td></tr></table></figure>
+<p>위처럼 재할당을 할 수 없다. 하지만  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> hun = &#123;  </div><div class="line">    <span class="attr">age</span>: <span class="number">30</span>,  </div><div class="line">    nickName = <span class="string">"hun08"</span>  </div><div class="line">&#125;  </div><div class="line"></div><div class="line">hun.age = <span class="number">31</span>;  </div></pre></td></tr></table></figure>
+<p>위처럼 변경은 가능하다.  </p>
 <h4 id="타입-검사와-타입-선언"><a href="#타입-검사와-타입-선언" class="headerlink" title="타입 검사와 타입 선언"></a>타입 검사와 타입 선언</h4><p>정적 타입 검사 -&gt; 자바, C++<br>동적 타입 검사 -&gt; 자바스크립트  </p>
 <p>점진적 타입 검사 -&gt; 타입스크립트, 파이썬  </p>
 <p>점진적 타입 검사 : 컴파일 시간에 타입 검사를 수행하면서 필요에 따라 타입 선언의 생략을 허용. 타입을 선언을 생략하면 암시적 형변환이 일어남.  </p>
@@ -73,9 +64,9 @@ hun.age = 31;
         
         <tags>
             
-            <tag> TypeScript </tag>
-            
             <tag> Study </tag>
+            
+            <tag> TypeScript </tag>
             
         </tags>
         
@@ -111,13 +102,9 @@ hun.age = 31;
 </ul>
 </li>
 </ul>
-<pre><code>var a = [3];
-console.log(a.length); //1
-console.log(a[0]) //3
-</code></pre><pre><code>var a = new Array(3);
-console.log(a.length); //3
-console.log(typeof a[0]); //&quot;undefined&quot;
-</code></pre><h4 id="null-undefined-말고-empty는-뭐지"><a href="#null-undefined-말고-empty는-뭐지" class="headerlink" title="null, undefined 말고 empty는 뭐지?"></a>null, undefined 말고 empty는 뭐지?</h4><p>p.57 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">3</span>];</div><div class="line"><span class="built_in">console</span>.log(a.length); <span class="comment">//1</span></div><div class="line"><span class="built_in">console</span>.log(a[<span class="number">0</span>]) <span class="comment">//3</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(a.length); <span class="comment">//3</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a[<span class="number">0</span>]); <span class="comment">//"undefined"  </span></div></pre></td></tr></table></figure>
+<h4 id="null-undefined-말고-empty는-뭐지"><a href="#null-undefined-말고-empty는-뭐지" class="headerlink" title="null, undefined 말고 empty는 뭐지?"></a>null, undefined 말고 empty는 뭐지?</h4><p>p.57 </p>
 <ul>
 <li>배열에서 크기는 지정되었는데 값이 없을 때 인가?  </li>
 </ul>
@@ -133,13 +120,13 @@ console.log(typeof a[0]); //&quot;undefined&quot;
         
         <tags>
             
-            <tag> Study </tag>
-            
             <tag> Javascript </tag>
             
             <tag> Data Structures </tag>
             
             <tag> Algorithms </tag>
+            
+            <tag> Study </tag>
             
         </tags>
         

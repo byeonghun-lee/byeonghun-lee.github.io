@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://byeonghun-lee.github.io/"/>
-  <updated>2018-10-28T05:14:10.152Z</updated>
+  <updated>2018-10-28T06:52:26.517Z</updated>
   <id>https://byeonghun-lee.github.io/</id>
   
   <author>
@@ -20,9 +20,13 @@
     <link href="https://byeonghun-lee.github.io/2018/10/28/typeScript-chapter-4/"/>
     <id>https://byeonghun-lee.github.io/2018/10/28/typeScript-chapter-4/</id>
     <published>2018-10-28T05:12:27.000Z</published>
-    <updated>2018-10-28T05:14:10.152Z</updated>
+    <updated>2018-10-28T06:52:26.517Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="타입스크립트-퀵스타트-4장-스터디"><a href="#타입스크립트-퀵스타트-4장-스터디" class="headerlink" title="타입스크립트  퀵스타트 4장 스터디"></a>타입스크립트  퀵스타트 4장 스터디</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="타입스크립트-퀵스타트-4장-스터디"><a href="#타입스크립트-퀵스타트-4장-스터디" class="headerlink" title="타입스크립트  퀵스타트 4장 스터디"></a>타입스크립트  퀵스타트 4장 스터디</h2><a id="more"></a>
+<h5 id="ES6의-for-of-문"><a href="#ES6의-for-of-문" class="headerlink" title="ES6의 for of 문"></a>ES6의 for of 문</h5><p>인덱스를 이용해 값을 가져올 수 있는 for in 문과 달리 for of 문은 곧바로 값을 가져올 수 있음.  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">const</span> value <span class="keyword">of</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]) &#123;</div><div class="line">    <span class="built_in">console</span>.log(value)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>for 문에서 const를 사용시 상수가 되어 증가 값이 바뀌지 않기 때문에 let을 사용하지만 for of문에선 사용할 수 있다.  </p>
+]]></content>
     
     <summary type="html">
     
@@ -31,9 +35,9 @@
     </summary>
     
     
-      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
-    
       <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
+    
+      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
     
   </entry>
   
@@ -42,7 +46,7 @@
     <link href="https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/"/>
     <id>https://byeonghun-lee.github.io/2018/10/21/typeScript-chapter-3/</id>
     <published>2018-10-21T12:31:26.000Z</published>
-    <updated>2018-10-28T05:17:39.287Z</updated>
+    <updated>2018-10-28T06:40:26.751Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>새로 타입스크립트 스터디를 시작한다. 책은 예전 회사에서 세미나를 위해 읽어봤던 정진욱님이 지은 [타입스크립트 퀵스타트]로 선택했다. 책 내용 요약 보다는s 내가 알고 있는 혹은, 새로 알게된 내용이 합쳐져서 여기 블로그에 정리할 것 같다. 공부하면서 회사에서도 빨리 썼으면 좋겠다.  </li>
@@ -65,23 +69,10 @@
 <h6 id="찾아보기-2"><a href="#찾아보기-2" class="headerlink" title="찾아보기"></a>찾아보기</h6><p><a href="https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping" target="_blank" rel="external">https://stackoverflow.com/questions/40394499/what-is-the-actual-advantage-of-using-let-block-scoping</a></p>
 <p>const는 변수를 상수로 선언할 떄 사용한다. const를 이용해 변수를 선언하면 초기화는 가능하지만 재할당되지 않는 읽기 전용이다. 상수 말고도 let과 다른 점은 선언시 초기화를 해줘야 한다는 것이다. </p>
 <p>const의 경우 재할당은 할 수 없지만 객체 리터럴의 속성으로 변경은 가능하다. </p>
-<pre><code>const hun = {  
-    age: 30,  
-    nickName = &quot;hun08&quot;  
-}  
-
-hun = {  
-    age: 31,  
-    nickName = &quot;hun0811&quot;  
-}
-</code></pre><p>위처럼 재할당을 할 수 없다. 하지만  </p>
-<pre><code>const hun = {  
-    age: 30,  
-    nickName = &quot;hun08&quot;  
-}  
-
-hun.age = 31;
-</code></pre><p>위처럼 변경은 가능하다.  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> hun = &#123;  </div><div class="line">    <span class="attr">age</span>: <span class="number">30</span>,  </div><div class="line">    nickName = <span class="string">"hun08"</span>  </div><div class="line">&#125;  </div><div class="line"></div><div class="line">hun = &#123;  </div><div class="line">    <span class="attr">age</span>: <span class="number">31</span>,  </div><div class="line">    nickName = <span class="string">"hun0811"</span>  </div><div class="line">&#125;  </div></pre></td></tr></table></figure>
+<p>위처럼 재할당을 할 수 없다. 하지만  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> hun = &#123;  </div><div class="line">    <span class="attr">age</span>: <span class="number">30</span>,  </div><div class="line">    nickName = <span class="string">"hun08"</span>  </div><div class="line">&#125;  </div><div class="line"></div><div class="line">hun.age = <span class="number">31</span>;  </div></pre></td></tr></table></figure>
+<p>위처럼 변경은 가능하다.  </p>
 <h4 id="타입-검사와-타입-선언"><a href="#타입-검사와-타입-선언" class="headerlink" title="타입 검사와 타입 선언"></a>타입 검사와 타입 선언</h4><p>정적 타입 검사 -&gt; 자바, C++<br>동적 타입 검사 -&gt; 자바스크립트  </p>
 <p>점진적 타입 검사 -&gt; 타입스크립트, 파이썬  </p>
 <p>점진적 타입 검사 : 컴파일 시간에 타입 검사를 수행하면서 필요에 따라 타입 선언의 생략을 허용. 타입을 선언을 생략하면 암시적 형변환이 일어남.  </p>
@@ -99,9 +90,9 @@ hun.age = 31;
       <category term="Study" scheme="https://byeonghun-lee.github.io/categories/Study/"/>
     
     
-      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
-    
       <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
+    
+      <category term="TypeScript" scheme="https://byeonghun-lee.github.io/tags/TypeScript/"/>
     
   </entry>
   
@@ -110,7 +101,7 @@ hun.age = 31;
     <link href="https://byeonghun-lee.github.io/2018/02/19/study-01/"/>
     <id>https://byeonghun-lee.github.io/2018/02/19/study-01/</id>
     <published>2018-02-19T14:34:59.000Z</published>
-    <updated>2018-02-21T15:36:18.000Z</updated>
+    <updated>2018-10-28T06:42:17.654Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Learning-JavaScript-Data-Structures-and-Algorithms"><a href="#Learning-JavaScript-Data-Structures-and-Algorithms" class="headerlink" title="Learning JavaScript Data Structures and Algorithms"></a>Learning JavaScript Data Structures and Algorithms</h2><h4 id="비트-연산자"><a href="#비트-연산자" class="headerlink" title="비트 연산자"></a>비트 연산자</h4><p>p.42<br>MDN 연산자 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators" target="_blank" rel="external">링크</a><br>MDN 비트 연산자 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Obsolete_Pages/Core_JavaScript_1.5_Guide/Operators/Bitwise_Operators" target="_blank" rel="external">링크</a><br><a id="more"></a><br>비트연산자 왜 사용하는 거지? 어디에 사용하지?</p>
 <p>base64로 데이터를 전달할 때도 사용한다.  </p>
@@ -139,13 +130,9 @@ hun.age = 31;
 </ul>
 </li>
 </ul>
-<pre><code>var a = [3];
-console.log(a.length); //1
-console.log(a[0]) //3
-</code></pre><pre><code>var a = new Array(3);
-console.log(a.length); //3
-console.log(typeof a[0]); //&quot;undefined&quot;
-</code></pre><h4 id="null-undefined-말고-empty는-뭐지"><a href="#null-undefined-말고-empty는-뭐지" class="headerlink" title="null, undefined 말고 empty는 뭐지?"></a>null, undefined 말고 empty는 뭐지?</h4><p>p.57 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">3</span>];</div><div class="line"><span class="built_in">console</span>.log(a.length); <span class="comment">//1</span></div><div class="line"><span class="built_in">console</span>.log(a[<span class="number">0</span>]) <span class="comment">//3</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(a.length); <span class="comment">//3</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a[<span class="number">0</span>]); <span class="comment">//"undefined"  </span></div></pre></td></tr></table></figure>
+<h4 id="null-undefined-말고-empty는-뭐지"><a href="#null-undefined-말고-empty는-뭐지" class="headerlink" title="null, undefined 말고 empty는 뭐지?"></a>null, undefined 말고 empty는 뭐지?</h4><p>p.57 </p>
 <ul>
 <li>배열에서 크기는 지정되었는데 값이 없을 때 인가?  </li>
 </ul>
@@ -161,13 +148,13 @@ console.log(typeof a[0]); //&quot;undefined&quot;
       <category term="Study" scheme="https://byeonghun-lee.github.io/categories/Study/"/>
     
     
-      <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
-    
       <category term="Javascript" scheme="https://byeonghun-lee.github.io/tags/Javascript/"/>
     
       <category term="Data Structures" scheme="https://byeonghun-lee.github.io/tags/Data-Structures/"/>
     
       <category term="Algorithms" scheme="https://byeonghun-lee.github.io/tags/Algorithms/"/>
+    
+      <category term="Study" scheme="https://byeonghun-lee.github.io/tags/Study/"/>
     
   </entry>
   

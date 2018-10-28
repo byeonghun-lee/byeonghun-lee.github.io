@@ -6,14 +6,14 @@
     <title>자바스크립트 데이터구조와 알고리즘 스터디_01 | Hun Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Learning JavaScript Data Structures and Algorithms비트 연산자p.42MDN 연산자 링크MDN 비트 연산자 링크">
-<meta name="keywords" content="Study,Javascript,Data Structures,Algorithms">
+<meta name="keywords" content="Javascript,Data Structures,Algorithms,Study">
 <meta property="og:type" content="article">
 <meta property="og:title" content="자바스크립트 데이터구조와 알고리즘 스터디_01">
 <meta property="og:url" content="https://byeonghun-lee.github.io/2018/02/19/study-01/index.html">
 <meta property="og:site_name" content="Hun Blog">
 <meta property="og:description" content="Learning JavaScript Data Structures and Algorithms비트 연산자p.42MDN 연산자 링크MDN 비트 연산자 링크">
 <meta property="og:image" content="https://byeonghun-lee.github.io/images/studyBook.png">
-<meta property="og:updated_time" content="2018-02-21T15:36:18.000Z">
+<meta property="og:updated_time" content="2018-10-28T06:42:17.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="자바스크립트 데이터구조와 알고리즘 스터디_01">
 <meta name="twitter:description" content="Learning JavaScript Data Structures and Algorithms비트 연산자p.42MDN 연산자 링크MDN 비트 연산자 링크">
@@ -96,7 +96,7 @@ ga('send', 'pageview');
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -115,10 +115,10 @@ ga('send', 'pageview');
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -149,7 +149,7 @@ ga('send', 'pageview');
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -169,16 +169,16 @@ ga('send', 'pageview');
             <h2 id="name">Byeonghun Lee</h2>
             <h3 id="title">Front-end Developer</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Korea</span>
-            <a id="follow" target="_blank" href="https://github.com/byeonghun-lee">SEGUIR</a>
+            <a id="follow" target="_blank" href="https://github.com/byeonghun-lee">FOLLOW</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
                 7
-                <span>Entradas</span>
+                <span>posts</span>
             </div>
             <div class="article-info-block">
                 10
-                <span>Etiquetas</span>
+                <span>tags</span>
             </div>
         </div>
         
@@ -291,13 +291,9 @@ ga('send', 'pageview');
 </ul>
 </li>
 </ul>
-<pre><code>var a = [3];
-console.log(a.length); //1
-console.log(a[0]) //3
-</code></pre><pre><code>var a = new Array(3);
-console.log(a.length); //3
-console.log(typeof a[0]); //&quot;undefined&quot;
-</code></pre><h4 id="null-undefined-말고-empty는-뭐지"><a href="#null-undefined-말고-empty는-뭐지" class="headerlink" title="null, undefined 말고 empty는 뭐지?"></a>null, undefined 말고 empty는 뭐지?</h4><p>p.57 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">3</span>];</div><div class="line"><span class="built_in">console</span>.log(a.length); <span class="comment">//1</span></div><div class="line"><span class="built_in">console</span>.log(a[<span class="number">0</span>]) <span class="comment">//3</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(a.length); <span class="comment">//3</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a[<span class="number">0</span>]); <span class="comment">//"undefined"  </span></div></pre></td></tr></table></figure>
+<h4 id="null-undefined-말고-empty는-뭐지"><a href="#null-undefined-말고-empty는-뭐지" class="headerlink" title="null, undefined 말고 empty는 뭐지?"></a>null, undefined 말고 empty는 뭐지?</h4><p>p.57 </p>
 <ul>
 <li>배열에서 크기는 지정되었는데 값이 없을 때 인가?  </li>
 </ul>
@@ -312,7 +308,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
 
 </div>
 
-    <a data-url="https://byeonghun-lee.github.io/2018/02/19/study-01/" data-id="cjnsfbh27000fj69oktrbyn9g" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="https://byeonghun-lee.github.io/2018/02/19/study-01/" data-id="cjnsi2q400005ic9o5a742iey" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -380,7 +376,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
 
             
     
-        <a href="https://byeonghun-lee.github.io/2018/02/19/study-01/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://byeonghun-lee.github.io/2018/02/19/study-01/">Comentarios</a>
+        <a href="https://byeonghun-lee.github.io/2018/02/19/study-01/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://byeonghun-lee.github.io/2018/02/19/study-01/">Comments</a>
     
 
         </footer>
@@ -390,7 +386,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
 <nav id="article-nav">
     
         <a href="/2018/10/21/typeScript-chapter-3/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más nuevo</strong>
+            <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
                     TypeScript_chapter_3
@@ -400,7 +396,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
     
     
         <a href="/2017/10/29/cs50-1/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más viejo</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">컴퓨터과학 기초</div>
         </a>
     
@@ -427,7 +423,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Recientes</h3>
+        <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
@@ -533,7 +529,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Categorias</h3>
+        <h3 class="widget-title">categories</h3>
         <div class="widget">
             <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/API/">API</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Computer-Science/">Computer Science</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Project/">Project</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Study/">Study</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
         </div>
@@ -542,7 +538,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Archivos</h3>
+        <h3 class="widget-title">archives</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">10월 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">2월 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">10월 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">6월 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">5월 2017</a><span class="archive-list-count">1</span></li></ul>
         </div>
@@ -551,7 +547,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Etiquetas</h3>
+        <h3 class="widget-title">tags</h3>
         <div class="widget">
             <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Algorithms/">Algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CS50/">CS50</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Science/">Computer Science</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Study/">Study</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TypeScript/">TypeScript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/google-customSearch/">google customSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/프로젝트시작/">프로젝트시작</a><span class="tag-list-count">1</span></li></ul>
         </div>
@@ -560,7 +556,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Nube de etiquetas</h3>
+        <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
             <a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CS50/" style="font-size: 10px;">CS50</a> <a href="/tags/Computer-Science/" style="font-size: 10px;">Computer Science</a> <a href="/tags/Data-Structures/" style="font-size: 10px;">Data Structures</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Study/" style="font-size: 20px;">Study</a> <a href="/tags/TypeScript/" style="font-size: 15px;">TypeScript</a> <a href="/tags/google-customSearch/" style="font-size: 10px;">google customSearch</a> <a href="/tags/프로젝트시작/" style="font-size: 10px;">프로젝트시작</a>
         </div>
@@ -569,7 +565,7 @@ console.log(typeof a[0]); //&quot;undefined&quot;
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">Links</h3>
+        <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
                 
